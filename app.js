@@ -5,6 +5,242 @@ console.log('Hello JS Assignment 2 WM1379!');
 // <----------------------BEGIN:: Chapter No  21-25 BEGIN:: --------------------------->
 
 
+//  Task-1  
+
+// var first = prompt("Enter First Name");
+// var last = prompt("Enter Last Name");
+
+// var fullname = last +" " + first;
+
+// document.write("Welcome " + fullname );
+
+
+
+// Task-2
+
+// var mobile = prompt("Enter your favoriate mobile model:");
+// document.write("My favoriate mobile is:" + mobile);
+// document.write("<br>");
+// document.write("Length of string: "+mobile.length);
+
+
+
+// Task-3
+
+// var x = "Pakistani";
+// var indexofn = x.indexOf("n");
+// document.write("String: Pakistani<br>");
+// document.write("Index of 'n':"+indexofn);
+
+
+
+// Task-4
+
+//  var x = "Hello World";
+//  
+
+//  for (var i = lenofx-1;i>=0;i--){
+//      if(x[i] == "l"){
+//          var indexofx = x-i
+//          var     }
+//  }
+//  var indexofn = x.indexOf("i",);
+//  document.write("String: Pakistani<br>");
+//  document.write("Index of 'n':"+indexofn);
+
+// var str = "Hello World";
+// var indices = [];
+// for(var i=0; i<str.length;i++) {
+//     if (str[i] === "l") indices.push(i);
+// }
+// document.write("String:"+str);
+// document.write("<br>");
+// var lenofindices = indices.length;
+// document.write("Last index of 'l':" + indices[lenofindices-1]);
+
+
+
+
+// Task-5
+
+// var str = "Pakistani";
+// var ch = str[3];
+// document.write("String:Pakistani <br>");
+// document.write("Character at index 3:"+ch)
+
+
+// Task-6
+//  var first = prompt("Enter First Name");
+//  var last = prompt("Enter Last Name");
+//  var fullname = first.concat(last);
+//  document.write("Welcome " + fullname );
+
+
+
+// Task-7
+
+// var str = "Hyderabad";
+// var t = str.replace("Hydera","Islam");
+// document.write("City: Hyderabad <br>");
+// document.write("After replacement:" +t);
+
+
+// Task-8
+
+// var message = "Ali and Sami are best friends.They play cricket and football together.";
+
+// var t = message.split("and").join(" & ");
+// document.write(message+"<br>");
+// document.write(t)
+
+
+//Task-9
+
+// var value = "472";
+// document.write("value:"+value);
+// document.write("<br>");
+// document.write("Type:" + typeof(value));
+// document.write("<br>");
+// var intvalue = parseInt(value);
+// document.write("value:"+intvalue);
+// document.write("<br>");
+// document.write("value:"+ typeof(intvalue));
+
+// Task-10
+
+// var u = prompt("Enter someting");
+// var v = u.toUpperCase();
+// document.write("User input:"+u)
+// document.write("<br>");
+// document.write("Upper case:"+v);
+
+
+// Task-11
+
+//  var u = prompt("Enter someting");
+//  var v = u.toLowerCase();
+//  document.write("User input:"+u);
+//  document.write("<br>");
+//  var b = v.charAt(0).toUpperCase();
+// //  v.charAt(0) = b.toUpperCase();
+//  document.write(" case:"+b);
+
+
+//Task - 12
+
+// var num = 35.36;
+// var str = num.toString();
+// var final = str.replace(".","");
+// document.write("Number:"+str);
+// document.write("<br>");
+// document.write("Result:" + final);
+
+
+//Task - 13
+
+// var specialChars = "<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=";
+// var checkForSpecialChar = function(string){
+//  for(i = 0; i < specialChars.length;i++){
+//    if(string.indexOf(specialChars[i]) > -1){
+//        return true
+//     }
+//  }
+//  return false;
+// }
+
+// var str = prompt("Enter Username");
+// if(checkForSpecialChar(str)){
+//   alert("Enter valid username");
+// } 
+
+
+
+
+// Task-14
+
+// var a = ["cake","apple pie", "cookie","chips","patties"];
+
+// var userinput = prompt("Welcome to ABC bakery. What do you want to order sir/mam ?");
+
+// userinput = userinput.toLowerCase();
+
+// for(var i=0; i<a.length;i++) {
+//        if (a[i] === userinput) {
+//         document.write(userinput+" is available at index "+ i +" in our bakery")
+//        }
+//        else{
+//         document.write("We are sorry."+userinput+" available is not available in our bakery.")
+//        }
+//        break;
+//     }
+
+
+
+// task-15
+
+// var password = prompt("Enter Password");
+
+// var firstchar =  password.charCodeAt(0);
+//  var letters = /^[0-9a-z]+$/;
+
+// if(firstchar >=48 && firstchar<= 57){
+// alert("Enter Valid Password")
+// }
+// else if (password.length >6)
+//     {
+//         alert("Enter Valid Password")
+//     }
+
+// else if (password === letters){
+//     alert("Valid")
+    
+// }
+    
+ 
+
+
+// Task-16
+
+// var university = "University of Karachi";
+// var arr = [];
+// arr = university.split("");
+// // document.write(arr.length)
+//  for(var i=0; i <arr.length;i++){
+//      document.write(arr[i]+"<br>");
+//  }
+
+
+// Task-17
+
+// var input = prompt("Enter something");
+
+// var lastchar = input.charAt(input.length-1);
+
+// document.write("User input:" + input+"<br>");
+// document.write("Last Character of input: " + lastchar);
+
+
+
+// Task-18
+
+// var t = "The quick brown fox jumps over the lazy dog";
+// t = t.toLowerCase();
+// var check = "the";
+
+// var arr = [];
+// var count=0;
+// arr = t.split(" ");
+// var arrlen = arr.length;
+
+// for(var i =0 ; i <arrlen ; i++){
+//     if(arr[i]==="the"){
+//         count++;
+//     }
+
+// }
+
+// document.write("Text: The quick brown fox jumps over the lazy dog <br>");
+// document.write("There are "+count +" occurrence(s) of word 'the'");
 
 
 
