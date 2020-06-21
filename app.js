@@ -275,19 +275,17 @@ const sum = () => {
 
 // @@ Task 6 ----------------------------------------
 
-var input = prompt("Enter a number to calculate factorial!");
+// var input = prompt("Enter a number to calculate factorial!");
 
-const factorial = (num) => {
+// const factorial = (num) => {
 
-	if(num > 1) {
-		return (num * factorial(num-1));
-	}else {
-		return 1;
-	}
+// 	if(num > 1) {
+// 		return (num * factorial(num-1));
+// 	}else {
+// 		return 1;
+// 	}
 
-
-
-}
+// }
 
 // document.write(factorial(input));
 
@@ -350,6 +348,33 @@ const capitalize = () => {
 }
 
 // capitalize();
+
+
+
+// @@ task 14 ---------------------------------------------
+
+var radius = prompt('Enter radius of a circle');
+
+const circumference = (r) => {
+
+	var circumference = (2 * 22/7 * r).toFixed(2);
+
+	alert('Circumference is ' + circumference);
+
+}
+
+
+const area = (r) => {
+
+	var area = (22/7 * r * r).toFixed(2);
+
+	alert('Area is ' + area);
+
+}
+
+circumference(radius);
+area(radius);
+
 
 
 
