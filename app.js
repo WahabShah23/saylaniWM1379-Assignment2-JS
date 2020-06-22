@@ -244,8 +244,8 @@ console.log('Hello JS Assignment 2 WM1379!');
 
 
 
-
 /* <--------------------------- END:: Chapter 21-25 END:: ----------------------------------------> */
+
 
 
 
@@ -430,6 +430,158 @@ function negativeInteger() {
 
 
 
+// Task-1
+
+// var now = new Date();
+// document.write(now)
+
+
+
+// Task-2
+// var monthsNames = ["Jan", "feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// var month = new Date();
+// var monthnumber = month.getMonth();
+// document.write(monthsNames[monthnumber]);
+
+
+// Task-3
+// var dayNames = ["Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
+
+// var day = new Date();
+// var daynumber = day.getDay();
+//  document.write("Today is "+dayNames[daynumber]);
+
+
+// Task-4
+// var day = new Date();
+// var daynumber = day.getDay();
+// if( daynumber === 0 || daynumber===7){
+//     document.write("It's Fun day");
+// }
+
+
+// Task-5
+
+// var day = new Date();
+// var daynumber = day.getDate();
+// if(daynumber <16){
+// document.write("First fifteen days of the month");
+// }
+// else
+// {
+//     document.write("Last days of the month");
+// }
+
+
+
+// Task-6
+// var currentdate = new Date();
+// var ms = currentdate.getTime();
+// var min = currentdate.getTime()/(1000*60);
+
+
+// document.write("Current Date: "+currentdate+"<br>");
+// document.write("Elapsed milliseconds since January 1,1970: "+ ms+"<br>");
+// document.write("Elapsed minutes since January 1, 1970: " + min)
+
+
+
+// Task-7
+// var day = new Date();
+// var ch = day.getHours();
+
+// if(ch <12){
+//     document.write("It's AM");
+// }
+// else{
+//     document.write("It's PM");
+// }
+
+
+// Task-8
+// var LaterDate = new Date("Dec 31,2020");
+// document.write("Later date: " +LaterDate);
+
+
+
+
+//Task-9
+// var firstday = new Date("June 18,2015");
+// var firstdayday = firstday.getTime();
+
+// var day = new Date();
+// var cd = day.getTime();
+// var diff = cd - firstdayday;
+
+// var diffday = diff/(1000*60*60*24);
+
+// document.write(diffday.toFixed(0)+" days have passed since 1st Ramadan,2015");
+
+
+
+
+// Task-10
+// var firstday = new Date("Jan 1,2015");
+// var firstdayday = firstday.getTime();
+
+// var day = new Date();
+// var cd = day.getTime();
+// var diff = cd-firstdayday;
+
+// var diffday = diff/(1000);
+// diffday = diffday.toFixed(0);
+
+// document.write("On reference date "+firstday+" , "+ diffday + " seconds had passed since beginning of 2015");
+
+
+
+
+
+// Task-11
+//  var day = new Date();
+//  var hours = day.getHours();
+//  var newday = new Date();
+//  newday.setHours(hours-1);
+//  document.write("Current Date: "+day+"<br>");
+//  document.write("1 hour ago,it was: "+newday);
+
+
+// Task-12
+//    var day = new Date();
+//    var hours = day.getFullYear();
+//    var newday = new Date();
+//    newday.setFullYear(hours-100);
+//    alert("Current Date: "+day+"\n100 years back,it was: "+newday);
+
+
+
+
+// Task-13
+//  var userage = prompt("Enter your age");
+//  var d = new Date().getFullYear();
+// var by = d-userage;
+//  document.write("Your age is "+userage+"<br>");
+//  document.write("Your birth year is "+by );
+
+
+//Task-14
+// var monthsNames = ["Jan", "feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+// var name = "Zohaib Shah";
+// var d = new Date().getMonth();
+// var units = 450;
+// var unitcharges = 16;
+// var extracharges = 350;
+// var totalcharges = units*unitcharges+extracharges;
+
+// document.write("<h2>K-Electric Bill</h2>");
+// document.write("Customer Name: <strong>"+name+"</strong><br>");
+// document.write("Month: <strong>"+monthsNames[d]+"</strong><br>");
+// document.write("Number of units: <strong>"+units+"</strong><br>");
+// document.write("Charges per unit: <strong>"+unitcharges+"</strong><br><br>");
+// document.write("Net Amount Payable (within Due Date): <strong>"+units*unitcharges+"</strong><br>");
+// document.write("Lat payment surcharge: <strong> 350 </strong><br>");
+// document.write("Gross Amount Payable(afer Due Date): <strong>"+totalcharges+"</strong><br>");
 
 
 
@@ -487,8 +639,31 @@ const sum = () => {
 
 // @@ Task 4 -------------------------------------------
 
+
 // Calculator
 
+// let num_1 = prompt('Enter number 1');
+// let operator = prompt('Enter Operator');
+// let num_2 = prompt('Enter number 2');
+
+// const calc = (num1, opr, num2) => {
+
+	
+// 	if(opr === '+') {
+// 		alert('Sum is: ' + num1 + num2);
+// 	} else if(opr === '-') {
+// 		alert('Difference is: ' + num1 - num2);
+// 	} else if(opr === '*') {
+// 		alert('Product is: ' + num1 * num2);
+// 	} else if(opr === '/') {
+// 		alert('Division is: ' + num1 / num2);
+// 	} else {
+// 		alert('Invalid Operator: ' + operator + ' passed as operator!');
+// 	}
+
+// }
+
+// calc(num1, operator, num2);
 
 
 
@@ -548,6 +723,47 @@ const counting = () => {
 
 
 
+// @@ Task 8 ---------------------------------------------
+
+// var base = prompt("Enter Base");
+// var perpendicular = prompt("Enter perpendicular");
+
+
+// const calculateSquare = (b, p) => {
+// 	return ((b*b) + (p*p));
+// }
+
+// const calcHypo = (b, p) => {
+//  	let squaresSum = calculateSquare(b,p);
+//  	let h = Math.sqrt(squaresSum);
+
+// 	return h;
+// }
+
+// var hypo = calcHypo(base, perpendicular);
+// console.log('Hypotenuse is: ', hypo);
+
+
+
+
+
+// @@ Task 9 ---------------------------------------------
+
+
+// var width = 20;
+// var height = 30;
+
+// const areaOfRectangle = (width, height) => {
+
+// 	return width * height;
+  
+// }
+// console.log('By Variables =>', areaOfRectangle(width,height));
+// console.log('By Values => ' , areaOfRectangle(12, 12));
+
+
+
+
 
 // @@ Task 10 ----------------------------------------
 
@@ -587,29 +803,73 @@ const capitalize = () => {
 
 
 
+
+// @@ Task 12 ---------------------------------------
+
+
+function findLongestWord(str) {
+  var strSplit = str.split(' ');
+  var longestWord = 0;
+  var longestWordValue = '';
+  for(var i = 0; i < strSplit.length; i++){
+    if(strSplit[i].length > longestWord){
+		longestWord = strSplit[i].length;
+		longestWordValue = strSplit[i];
+     }
+  }
+  // console.log({longestWord});
+  return longestWordValue;
+}
+
+var longest_word = findLongestWord("The quick brown fox jumped over the lazy dog");
+console.log({longest_word});
+
+
+
+
+// @@ Task 13 --------------------------------------
+
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) {
+      letter_Count += 1;
+     }
+  }
+  	return letter_Count;
+}
+
+console.log('Repeated word "o" in  "oll Vowels JSResourceSo.com" =>> ',char_count('Oll Vowels JSResourceSo.com', 'o'));
+
+
+
+
+
 // @@ task 14 ---------------------------------------------
 
-var radius = prompt('Enter radius of a circle');
+// var radius = prompt('Enter radius of a circle');
 
-const circumference = (r) => {
+// const circumference = (r) => {
 
-	var circumference = (2 * 22/7 * r).toFixed(2);
+// 	var circumference = (2 * 22/7 * r).toFixed(2);
 
-	alert('Circumference is ' + circumference);
+// 	alert('Circumference is ' + circumference);
 
-}
+// }
 
 
-const area = (r) => {
+// const area = (r) => {
 
-	var area = (22/7 * r * r).toFixed(2);
+// 	var area = (22/7 * r * r).toFixed(2);
 
-	alert('Area is ' + area);
+// 	alert('Area is ' + area);
 
-}
+// }
 
-circumference(radius);
-area(radius);
+// circumference(radius);
+// area(radius);
 
 
 
